@@ -1,5 +1,299 @@
 <html>
 <head>
+ <!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+<title>Cart Page - GA 電子商務範例</title>
+<!-- 以下是 GA 追蹤碼的基本安裝 -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=追蹤編號"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments)};
+gtag("js", new Date());
+
+gtag("config", "追蹤編號");
+// 以下和電子商務有關的追蹤程式
+// 追蹤：【兔兔草】產品加入購物車
+gtag("event", "add_to_cart", {
+	"items":[
+		{
+			"id": "產品編號 9487", // 產品編號
+			"name": "兔兔草", // 產品名稱
+			// 以上為必填，以下選填
+			"brand": "A 牌", // 產品分類
+			"category": "寵物飼料", // 產品品牌
+			"variant": "2 公斤裝", // 產品選項
+			"quantity": 1,
+			"price": "200"
+		}
+	]
+});
+</script>
+</head>
+<body>
+	購物車網頁，<a href="checkout-page.htm">開始結帳</a>
+</body>
+</html>
+ <!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+<title>Checkout Page - GA 電子商務範例</title>
+<!-- 以下是 GA 追蹤碼的基本安裝 -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=追蹤編號"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments)};
+gtag("js", new Date());
+
+gtag("config", "追蹤編號");
+// 以下和電子商務有關的追蹤程式
+// 追蹤：開始結帳
+gtag("event", "begin_checkout", {
+	"items":[
+		{
+			"id": "產品編號 9487", // 產品編號
+			"name": "兔兔草", // 產品名稱
+			// 以上為必填，以下選填
+			"brand": "彭彭牌", // 產品品牌
+			"category": "寵物飼料", // 產品分類
+			"variant": "2 公斤裝",
+			"quantity": 1,
+			"price": "200"
+		}
+	]
+});
+</script>
+</head>
+<body>
+	結帳網頁，<a href="thankyou-page.htm">完成購買</a>
+</body>
+</html>
+ <!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+<title>Landing Page - GA 電子商務範例</title>
+<!-- 以下是 GA 追蹤碼的基本安裝 -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=追蹤編號"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments)};
+gtag("js", new Date());
+
+gtag("config", "追蹤編號");
+// 以下和電子商務有關的追蹤程式
+// 追蹤：【兔兔草】產品展示次數
+gtag("event", "view_item_list", {
+	"items":[
+		{
+			"id": "產品編號 9487", // 產品編號
+			"name": "兔兔草", // 產品名稱
+			// 以上為必填，以下選填
+			"brand": "A 牌", // 產品品牌
+			"category": "寵物飼料", // 產品分類
+			"variant": "2 公斤裝" // 產品選項
+		}
+	]
+});
+</script>
+</head>
+<body>
+	<h3>到達網頁，這裡有好多兔兔草可供挑選。</h3>
+	1. A 牌兔兔草：前往<a href="product-page.htm">產品網頁</a><br/>
+	2. B 牌兔兔草：....
+</body>
+</html>
+ <!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+<title>Product Page - GA 電子商務範例</title>
+<!-- 以下是 GA 追蹤碼的基本安裝 -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=追蹤編號"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments)};
+gtag("js", new Date());
+
+gtag("config", "追蹤編號");
+// 以下和電子商務有關的追蹤程式
+// 追蹤：【兔兔草】產品詳細資訊的瀏覽次數
+gtag("event", "view_item", {
+	"items":[
+		{
+			"id": "產品編號 9487", // 產品編號
+			"name": "兔兔草", // 產品名稱
+			// 以上為必填，以下選填
+			"brand": "A 牌",
+			"category": "寵物飼料",
+			"variant": "2 公斤裝"
+		}
+	]
+});
+</script>
+</head>
+<body>
+	產品網頁，<a href="cart-page.htm">加入購物車</a>
+</body>
+</html>
+ <!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+<title>Google Analytics 基本範例</title>
+<!-- 以下是 GA 追蹤碼的基本安裝 -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=追蹤編號"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments)};
+gtag("js", new Date());
+
+gtag("config", "追蹤編號");
+// 以下和電子商務有關的追蹤程式
+// 追蹤：完成購物
+gtag("event", "purchase", {
+	"transaction_id": "訂單編號 948794 狂",
+	// 以上為必填，以下選填
+	"value": 200,
+	"currency": "TWD",
+	"tax": "0",
+	"shipping": "30",
+	// items 為購買的產品資訊，必填
+	"items":[
+		{
+			"id": "產品編號 9487", // 產品編號
+			"name": "兔兔草", // 產品名稱
+			// 以上為必填，以下選填
+			"brand": "A 牌", // 產品分類
+			"category": "寵物飼料", // 產品品牌
+			"variant": "2 公斤裝", // 產品選項
+			"quantity": 1,
+			"price": "200"
+		}
+	]
+});
+</script>
+</head>
+<body>
+	感謝您的購買
+</body>
+</html>
+ <!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+<title>Google Analytics 基本範例</title>
+<!-- 以下是 GA 追蹤碼的基本安裝 -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=追蹤編號"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments)};
+gtag("js", new Date());
+
+gtag("config", "追蹤編號");
+// 以下和電子商務有關的追蹤程式
+// 追蹤：完成購物
+gtag("event", "purchase", {
+	"transaction_id": "訂單編號 948794 狂",
+	// 以上為必填，以下選填
+	"value": 200,
+	"currency": "TWD",
+	"tax": "0",
+	"shipping": "30",
+	// items 為購買的產品資訊，必填
+	"items":[
+		{
+			"id": "產品編號 9487", // 產品編號
+			"name": "兔兔草", // 產品名稱
+			// 以上為必填，以下選填
+			"brand": "A 牌", // 產品分類
+			"category": "寵物飼料", // 產品品牌
+			"variant": "2 公斤裝", // 產品選項
+			"quantity": 1,
+			"price": "200"
+		}
+	]
+});
+</script>
+</head>
+<body>
+	感謝您的購買
+</body>
+</html>
+ <!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+<title>Google Analytics 事件追蹤範例</title>
+<!-- 以下是 GA 追蹤碼的基本安裝 -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=追蹤編號"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments)};
+gtag("js", new Date());
+
+gtag("config", "追蹤編號");
+</script>
+<script>
+function trackCTA(){
+	// 送出事件紀錄
+	gtag("event", "點擊", {
+		"event_category":"CTA",
+		"event_label":"頁面標題",
+		"value": 1
+	});
+	alert("Event Sent!");
+}
+</script>
+</head>
+<body>
+	追蹤網頁瀏覽次數
+	<button onclick="trackCTA();">Call to Action</button>
+</body>
+</html>
+ <!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+<title>Google Analytics 時間追蹤範例</title>
+<!-- 以下是 GA 追蹤碼的基本安裝 -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=追蹤編號"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments)};
+gtag("js", new Date());
+
+gtag("config", "追蹤編號");
+</script>
+<script>
+var startTime=(new Date()).getTime(); // 取得當前時間：毫秒
+function trackTiming(){
+	var time=(new Date()).getTime()-startTime; // 取得時間差：毫秒
+	// 送出時間紀錄
+	gtag("event", "timing_complete", {
+		"name": "凝視的時間",
+		"event_category": "使用行為",
+		"value": time
+	});
+	alert("User Timing Sent!");
+}
+</script>
+</head>
+<body>
+	追蹤網頁瀏覽次數
+	<button onclick="trackTiming();">點擊紀錄：凝視的時間</button>
+</body>
+</html>
  <title>My first Homepage</title>
  <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-122683172-1"></script>
